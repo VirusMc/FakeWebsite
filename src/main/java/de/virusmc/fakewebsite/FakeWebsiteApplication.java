@@ -10,14 +10,14 @@ import org.springframework.context.annotation.PropertySource;
 @Flogger
 public class FakeWebsiteApplication {
 
-	public static final Class<FakeWebsiteApplication> APPLICATION_CLASS = FakeWebsiteApplication.class;
+    public static final Class<FakeWebsiteApplication> APPLICATION_CLASS = FakeWebsiteApplication.class;
 
-	public static void main(String[] args) {
-		new SpringApplication(APPLICATION_CLASS).run(args).getBean(APPLICATION_CLASS).doStartupStuff();
-	}
+    public static void main(String[] args) {
+        new SpringApplication(APPLICATION_CLASS).run(args).getBean(APPLICATION_CLASS).doStartupStuff();
+    }
 
-	public void doStartupStuff() {
-		log.atInfo().log("-- Started FakeWebsiteApplication --");
-	}
+    public void doStartupStuff() {
+        log.atInfo().log("-- Started FakeWebsiteApplication --");
+    }
 
 }
