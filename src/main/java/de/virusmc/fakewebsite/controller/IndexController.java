@@ -61,9 +61,4 @@ public class IndexController {
             return "redirect:/#" + id;
         }
     }
-
-    @GetMapping("/empty")
-    public ModelAndView empty() {
-        return new ModelAndView("components/empty", "page", pageModel);
-    }
 }
