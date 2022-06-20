@@ -11,4 +11,9 @@ public class IndexController {
     public ModelAndView index() {
         return new ModelAndView("index");
     }
+
+    @GetMapping("/empty")
+    public ModelAndView empty() {
+        return new ModelAndView("components/empty");
+    }
 }
