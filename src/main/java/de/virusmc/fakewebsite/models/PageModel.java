@@ -9,4 +9,10 @@ public class PageModel {
 
     private String title;
     private NavbarElement[] navbarElements;
+
+    public void setActive(String id) {
+        for (NavbarElement navbarElement : navbarElements) {
+            navbarElement.setActive(navbarElement.getUrl().equals("/?id=" + id));
+        }
+    }
 }

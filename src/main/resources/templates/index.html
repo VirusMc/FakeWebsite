@@ -7,8 +7,29 @@
 	</head>
 	<body>
 		<div
-			th:unless="${page.navbarElements.isEmpty()}"
+			th:if="${page.navbarElements != null}"
 			th:replace="components/empty :: header"
 		></div>
+		<div class="text-center">
+			<h1 class="my-3">Wähle ein Thema aus!</h1>
+			<form class="d-flex" role="search">
+				<div class="row">
+					<div class="col-auto">
+						<input
+							class="form-control me-2"
+							type="search"
+							placeholder="Search"
+							aria-label="Search"
+						/>
+					</div>
+					<div class="col">
+						<button class="btn btn-outline-success" type="submit">
+							Search
+						</button>
+					</div>
+				</div>
+			</form>
+		</div>
+		<div th:replace="components/empty :: footer"></div>
 	</body>
 </html>
