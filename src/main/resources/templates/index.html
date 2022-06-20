@@ -1,10 +1,14 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
-<head>
-    <meta charset="UTF-8">
-    <title>Wähle ein Thema aus!</title>
-</head>
-<body>
-    <div th:replace="components/empty :: header"></div>
-</body>
+	<head>
+		<meta charset="UTF-8" />
+		<title>Wähle ein Thema aus!</title>
+		<div th:include="components/imports :: import"></div>
+	</head>
+	<body>
+		<div
+			th:unless="${page.navbarElements.isEmpty()}"
+			th:replace="components/empty :: header"
+		></div>
+	</body>
 </html>
