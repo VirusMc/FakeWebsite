@@ -1,4 +1,5 @@
-# Fake Website
+# Fake Website v1.0.0
+> Versionshinweis: Hauptversion.Subversion.Themenanzahl
 
 ## Konzept
 
@@ -6,8 +7,8 @@ Dieses Projekt soll bei jedem Refresh eine neue Webseite generieren. Dabei wird 
 
 ## Umsetzung
 
-- [ ] Ein Webserver aufsetzen
-- [ ] Eine Webseite zum Auswählen des Themas
+- [x] Ein Webserver aufsetzen
+- [x] Eine Webseite zum Auswählen des Themas
 - [ ] Eine Webseite für jedes Thema
   - [ ] Firma
   - [ ] Person
@@ -15,3 +16,11 @@ Dieses Projekt soll bei jedem Refresh eine neue Webseite generieren. Dabei wird 
   - [ ] Buch
   - [ ] Wetter
   - [ ] Sport Team
+
+## Anpassungen
+
+- [ ] `IndexPageModel.setActiveNavbarElement` durch lokales Script in `index.html` ersetzen
+
+## Fehler
+
+- [ ] `index.html`: Breite der Seite ist zu viel
