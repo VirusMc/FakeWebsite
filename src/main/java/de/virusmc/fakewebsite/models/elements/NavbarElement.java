@@ -2,6 +2,7 @@ package de.virusmc.fakewebsite.models.elements;
 
 import lombok.Builder;
 import lombok.Data;
+import lombok.experimental.SuperBuilder;
 
 /** Repräsentiert ein Link in der Navbar (Basiert auf Bootstrap)
  *
@@ -11,7 +12,7 @@ import lombok.Data;
  * @see <a href="https://getbootstrap.com/docs/5.2/components/navbar/#nav">Bootstrap Navbar</a>
  */
 @Data
-@Builder
+@SuperBuilder
 public class NavbarElement {
     private String name;
     private String url;

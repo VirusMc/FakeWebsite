@@ -1,8 +1,11 @@
 package de.virusmc.fakewebsite.models.index;
 
 import de.virusmc.fakewebsite.models.elements.NavbarElement;
+import de.virusmc.fakewebsite.models.elements.PageModel;
 import lombok.Builder;
 import lombok.Data;
+import lombok.EqualsAndHashCode;
+import lombok.experimental.SuperBuilder;
 
 /** Repräsentiert den Inhalt der Startseite
  *
@@ -13,26 +16,10 @@ import lombok.Data;
  * @see IndexContentModel
  */
 @Data
-@Builder
-public class IndexPageModel {
-
-    private String title;
-
-    private NavbarElement[] navbarElements;
+@SuperBuilder
+@EqualsAndHashCode(callSuper = true)
+public class IndexPageModel extends PageModel {
 
     private IndexContentModel[] cards;
 
-
-    /** Setzt das aktive Navbar-Element auf das angegebene Thema
-     *
-     * @author VirusMc
-     * @since 1.0.0
-     * @param id Thema, das aktiviert werden soll
-     * @see NavbarElement
-     */
-    public void setActiveNavbarElement(String id) {
-        for (NavbarElement navbarElement : navbarElements) {
-            navbarElement.active(navbarElement.url().equals("/?id=" + id));
-        }
-    }
 }
