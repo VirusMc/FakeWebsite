@@ -31,15 +31,15 @@
 			</form>
 			<div class="row row-cols-2 row-cols-lg-3 mx-5 mt-3">
 				<div
-					th:each="content: ${cards}"
+					th:each="content: ${page.cards}"
 					class="col"
 					th:id="'generate' +  ${content.title}"
 				>
 					<div class="card my-4">
 						<img
-							th:alt="${content.imgAlt}"
+							th:alt="${content.img.alt}"
 							class="card-img-top"
-							th:src="${content.imgSrc}"
+							th:src="${content.img.src}"
 						/>
 						<div class="card-body">
 							<h5

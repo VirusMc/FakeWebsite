@@ -19,3 +19,7 @@ Dieses Projekt soll bei jedem Refresh eine neue Webseite generieren. Dabei wird 
 ## Anpassungen
 
 - [ ] `IndexPageModel.setActiveNavbarElement` durch lokales Script in `index.html` ersetzen
+
+## Fehler
+
+- [ ] `index.html`: Breite der Seite ist 
