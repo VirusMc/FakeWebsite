@@ -15,3 +15,7 @@ Dieses Projekt soll bei jedem Refresh eine neue Webseite generieren. Dabei wird 
   - [ ] Buch
   - [ ] Wetter
   - [ ] Sport Team
+
+## Anpassungen
+
+- [ ] `IndexPageModel.setActiveNavbarElement` durch lokales Script in `index.html` ersetzen

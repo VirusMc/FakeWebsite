@@ -1,4 +1,4 @@
-package de.virusmc.fakewebsite.models;
+package de.virusmc.fakewebsite.models.elements;
 
 import lombok.Builder;
 import lombok.Data;
