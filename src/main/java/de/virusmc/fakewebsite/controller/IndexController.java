@@ -1,6 +1,5 @@
 package de.virusmc.fakewebsite.controller;
 
-import de.virusmc.fakewebsite.models.index.IndexContentModel;
 import de.virusmc.fakewebsite.models.index.IndexPageModel;
 import de.virusmc.fakewebsite.services.IndexService;
 import lombok.extern.flogger.Flogger;
