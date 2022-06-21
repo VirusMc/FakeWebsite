@@ -61,9 +61,9 @@ public class IndexService {
                 .cards(new IndexContentModel[]{
                         IndexContentModel.builder()
                                 .title("Firma")
-                                .url("/firma")
+                                .url("/firm")
                                 .description("Generiere eine neue Firma")
-                                .img(new ImageElement("https://loremflickr.com/400/400/business", "Firma Bild"))
+                                .img(new ImageElement("https://loremflickr.com/400/400/company", "Firma Bild"))
                                 .build(),
                         IndexContentModel.builder()
                                 .title("Person")

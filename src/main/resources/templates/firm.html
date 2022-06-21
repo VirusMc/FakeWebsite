@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+	<head>
+		<meta charset="UTF-8" />
+		<title th:text="${page.title}"></title>
+		<div th:include="components/imports :: import"></div>
+	</head>
+	<body>
+		<div
+			th:if="${page.navbarElements != null}"
+			th:replace="components/empty :: header"
+		></div>
+		<div th:replace="components/empty :: footer"></div>
+	</body>
+</html>
