@@ -29,6 +29,37 @@
 					</div>
 				</div>
 			</form>
+			<div class="row row-cols-2 row-cols-lg-3 mx-5 mt-3">
+				<div
+					th:each="content: ${cards}"
+					class="col"
+					th:id="'generate' +  ${content.title}"
+				>
+					<div class="card my-4">
+						<img
+							th:alt="${content.imgAlt}"
+							class="card-img-top"
+							th:src="${content.imgSrc}"
+						/>
+						<div class="card-body">
+							<h5
+								class="card-title"
+								th:text="${content.title}"
+							></h5>
+							<p
+								class="card-text"
+								th:text="${content.description}"
+							></p>
+							<a
+								href=""
+								class="btn btn-primary"
+								th:text="'Generate ' + ${content.title}"
+								th:href="${content.url}"
+							></a>
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
 		<div th:replace="components/empty :: footer"></div>
 	</body>
