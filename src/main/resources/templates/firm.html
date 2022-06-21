@@ -10,6 +10,36 @@
 			th:if="${page.navbarElements != null}"
 			th:replace="components/empty :: header"
 		></div>
+		<div
+			data-bs-spy="scroll"
+			data-bs-target="#navbar-example2"
+			data-bs-root-margin="0px 0px -40%"
+			data-bs-smooth-scroll="true"
+			class="scrollspy-example"
+			tabindex="0"
+		>
+			<ul class="list-group">
+				<li class="list-group-item">
+					<h1 id="general">Allgemeine Informationen</h1>
+					<table class="table">
+						<tbody>
+							<tr>
+								<th>Name</th>
+								<td th:text="${page.title}"></td>
+							</tr>
+							<tr>
+								<th>Adresse</th>
+								<td th:utext="${page.address}"></td>
+							</tr>
+							<tr>
+								<th>Telefonnummer</th>
+								<td th:text="${page.telephone}"></td>
+							</tr>
+						</tbody>
+					</table>
+				</li>
+			</ul>
+		</div>
 		<div th:replace="components/empty :: footer"></div>
 	</body>
 </html>

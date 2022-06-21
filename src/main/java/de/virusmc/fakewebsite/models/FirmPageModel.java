@@ -9,6 +9,7 @@ import lombok.experimental.SuperBuilder;
 @SuperBuilder
 @EqualsAndHashCode(callSuper = true)
 public class FirmPageModel extends PageModel {
-
+    private String address;
+    private String telephone;
 }
 
