@@ -3,7 +3,7 @@
 
 ## Konzept
 
-Dieses Projekt soll bei jedem Refresh eine neue Webseite generieren. Dabei wird der Java-Port von [FakerJs](https://github.com/DiUS/java-faker) benutzt, um eine zufällige Webseite zu erstellen. Diese Webseite kann verschiedene Inhalte enthalten, die dann in einem HTML-Dokument ausgegeben werden, welches man dann herrunterladen kann.
+Dieses Projekt soll bei jedem Refresh eine neue Webseite generieren. Dabei wird [Datafaker](https://www.datafaker.net/) benutzt, um eine zufällige Webseite zu erstellen. Diese Webseite kann verschiedene Inhalte enthalten, die dann in einem HTML-Dokument ausgegeben werden, welches man dann herrunterladen kann.
 
 ## Umsetzung
 
