@@ -6,9 +6,23 @@ import de.virusmc.fakewebsite.models.index.IndexContentModel;
 import de.virusmc.fakewebsite.models.index.IndexPageModel;
 import org.springframework.stereotype.Service;
 
+/** Service zum Erstellen der Startseite
+ *
+ * @author VirusMc
+ * @version 1.0.0
+ * @since 1.0.0
+ * @see IndexPageModel
+ */
 @Service
 public class IndexService {
 
+    /** Liefert den Inhalt der Startseite
+     *
+     * @author VirusMc
+     * @since 1.0.0
+     * @return Inhalt der Startseite
+     * @see IndexPageModel
+     */
     public IndexPageModel getIndexPageModel() {
         return IndexPageModel.builder()
                 .title("Fake Website")
