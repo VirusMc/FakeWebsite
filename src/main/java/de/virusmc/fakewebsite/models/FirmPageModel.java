@@ -11,5 +11,7 @@ import lombok.experimental.SuperBuilder;
 public class FirmPageModel extends PageModel {
     private String address;
     private String telephone;
+    private String industry;
+    private String catchPhrase;
 }
 

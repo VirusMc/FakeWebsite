@@ -12,7 +12,7 @@
 		></div>
 		<div
 			data-bs-spy="scroll"
-			data-bs-target="#navbar-example2"
+			data-bs-target="#header-nav"
 			data-bs-root-margin="0px 0px -40%"
 			data-bs-smooth-scroll="true"
 			class="scrollspy-example"
@@ -25,7 +25,9 @@
 						<tbody>
 							<tr>
 								<th>Name</th>
-								<td th:text="${page.title}"></td>
+								<td
+									th:utext="${page.title} + '<br/> ' + ${page.catchPhrase}"
+								></td>
 							</tr>
 							<tr>
 								<th>Adresse</th>
@@ -34,6 +36,10 @@
 							<tr>
 								<th>Telefonnummer</th>
 								<td th:text="${page.telephone}"></td>
+							</tr>
+							<tr>
+								<th>Betrieb</th>
+								<td th:text="${page.industry}"></td>
 							</tr>
 						</tbody>
 					</table>
